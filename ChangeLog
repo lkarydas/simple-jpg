@@ -1,0 +1,4 @@
+2012-02-06 Laz <lkarydas@gmail.com>
+	* src Initial commit
+	* src/demo.cpp Added a main function with a simple use of the class (reads and writes a jpg file).
+

@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <iostream>
+
+#include "jpgReader.h"
+#include "laz_img.h"
+
+
+
+// Includes for the directory scanning utilities
+#include <dirent.h>
+#include <errno.h>
+#include <sstream>
+
+
+using namespace std;
+
+
+
+main()
+{
+
+  jpgReader reader = jpgReader();
+ 
+
+
+  int bpp = 3; // this has to change Laz
+
+ 
+
+  laz_img img = reader.readJPG("test.jpg");
+
+
+
+
+  reader.writeJPG(img, "test_copy.jpg");
+
+
+
+  return 0;
+}
